@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Computer Force - Our mission, history, and the team behind our success.">
+    <title>Computer Force | About Us</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem;
+            color: #fff;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .search-bar input {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+            margin-right: 0.5rem;
+        }
+
+        .search-bar button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #f90;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* About Us Section */
+        .about-us {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-us h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .about-us p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        /* Mission Section */
+        .mission {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .mission h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .mission p {
+            font-size: 1.2rem;
+        }
+
+        /* History Section */
+        .history {
+            margin-bottom: 2.5rem;
+        }
+
+        .history h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .history img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Team Section */
+        .team {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .team h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Timeline Section */
+        .timeline {
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-event {
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #f90;
+            padding-left: 1rem;
+        }
+
+        .timeline-event h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-event p {
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer .social-media a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-us {
+                padding: 1rem;
+            }
+
+            .team-members {
+                grid-template-columns: 1fr;
+            }
+
+            footer .social-media a {
+                display: block;
+                margin-bottom: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Computer Force</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h1>About Computer Force</h1>
+        <p>At Computer Force, our mission is to provide top-quality IT solutions and exceptional customer service to clients worldwide. We are dedicated to innovation, excellence, and delivering the best technology solutions that help businesses thrive in a rapidly evolving digital world.</p>
+
+        <!-- Mission Section -->
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>Empowering businesses through innovative technology solutions, Computer Force is committed to helping companies succeed in a rapidly changing technological landscape.</p>
+        </section>
+
+        <!-- History Section -->
+        <section class="history">
+            <h2>Our History</h2>
+            <img src="https://via.placeholder.com/1000x500" alt="Company History Image">
+            <p>Founded in 2010, Computer Force has grown from a small IT startup into a global leader in technology solutions. Over the past decade, we have expanded our services to meet the growing demands of the industry and our clients, offering a wide range of products and services tailored to businesses of all sizes.</p>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="CEO Photo">
+                    <h3>John Doe</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="CTO Photo">
+                    <h3>Jane Smith</h3>
+                    <p>CTO</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="COO Photo">
+                    <h3>Michael Johnson</h3>
+                    <p>COO</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline">
+            <h2>Our Timeline</h2>
+            <div class="timeline-event">
+                <h3>2010: Company Founded</h3>
+                <p>Computer Force was founded in 2010 with a vision to provide cutting-edge IT solutions to businesses around the world.</p>
+            </div>
+            <div class="timeline-event">
+                <h3>2015: Expansion to Global Markets</h3>
+                <p>In 2015, we expanded our operations to serve clients across multiple continents, becoming a recognized leader in the IT industry.</p>
+            </div>
+            <div class="timeline-event">
+                <h3>2020: Award-Winning Innovation</h3>
+                <p>Our innovative solutions earned us numerous industry awards, cementing our position as a trusted technology partner.</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Computer Force. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find answers to frequently asked questions and contact our support team for further assistance.">
+    <title>Computer Force | Support</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem;
+            color: #fff;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .search-bar input {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+            margin-right: 0.5rem;
+        }
+
+        .search-bar button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #f90;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Support Page */
+        .support {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .support h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-bottom: 3rem;
+        }
+
+        .faq-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq h3 {
+            font-size: 1.2rem;
+            cursor: pointer;
+            background-color: #f90;
+            color: white;
+            padding: 0.8rem;
+            border-radius: 5px;
+        }
+
+        .faq p {
+            display: none;
+            padding: 1rem;
+            border: 1px solid #f90;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            background-color: #f4f4f4;
+        }
+
+        .faq.open p {
+            display: block;
+        }
+
+        /* Contact Form Section */
+        .contact-form {
+            margin-top: 2rem;
+        }
+
+        .contact-form h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form label {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        .contact-form button {
+            padding: 0.8rem 2rem;
+            background-color: #f90;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e08900;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer .social-media a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .support {
+                padding: 1rem;
+            }
+
+            footer .social-media a {
+                display: block;
+                margin-bottom: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Computer Force</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- Support Section -->
+    <section class="support">
+        <h1>Support & FAQs</h1>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq">
+                <h3>What is your return policy?</h3>
+                <p>We accept returns within 30 days of purchase, provided the product is in its original condition and packaging. Contact our support team for more details.</p>
+            </div>
+
+            <div class="faq">
+                <h3>How do I track my order?</h3>
+                <p>Once your order is shipped, you will receive a tracking number via email. You can use this number to track your order on our website.</p>
+            </div>
+
+            <div class="faq">
+                <h3>Do you offer international shipping?</h3>
+                <p>Yes, we offer international shipping to select countries. Shipping fees and delivery times may vary depending on the destination.</p>
+            </div>
+
+            <div class="faq">
+                <h3>How do I reset my account password?</h3>
+                <p>To reset your password, visit the "My Account" page and click on "Forgot Password." Follow the instructions to receive a password reset link via email.</p>
+            </div>
+
+            <div class="faq">
+                <h3>How do I contact customer support?</h3>
+                <p>You can reach our customer support team via email, phone, or by filling out the contact form below. We are available 24/7 to assist you.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Computer Force. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for FAQ Toggle -->
+    <script>
+        // FAQ Toggle Functionality
+        const faqs = document.querySelectorAll('.faq h3');
+        faqs.forEach(faq => {
+            faq.addEventListener('click', () => {
+                faq.parentElement.classList.toggle('open');
+            });
+        });
+
+        // Contact Form Submission (example functionality)
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your message has been sent. Our support team will get back to you shortly.');
+            this.reset(); // Clear form after submission
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed view of the selected product with specifications, pricing, and customer reviews.">
+    <title>Computer Force | Product Detail</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem;
+            color: #fff;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .search-bar input {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+            margin-right: 0.5rem;
+        }
+
+        .search-bar button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #f90;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Product Detail Section */
+        .product-detail {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem;
+        }
+
+        .product-images {
+            flex: 1;
+            max-width: 50%;
+            padding: 1rem;
+        }
+
+        .product-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-info {
+            flex: 1;
+            max-width: 50%;
+            padding: 1rem;
+        }
+
+        .product-info h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-info p {
+            margin-bottom: 1.5rem;
+        }
+
+        .product-info .price {
+            font-size: 1.8rem;
+            color: #f90;
+            margin-bottom: 1.5rem;
+        }
+
+        .add-to-cart-btn {
+            padding: 0.8rem 2rem;
+            background-color: #f90;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #e08900;
+        }
+
+        /* Customer Reviews */
+        .customer-reviews {
+            margin: 2rem;
+            padding: 1rem;
+            border-top: 1px solid #ddd;
+        }
+
+        .customer-reviews h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .review {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+        }
+
+        .review h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .review .rating {
+            color: #f90;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer .social-media a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-detail {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-images,
+            .product-info {
+                max-width: 100%;
+            }
+
+            .add-to-cart-btn {
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            footer .social-media a {
+                display: block;
+                margin-bottom: 0.8rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Computer Force</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="product-images">
+            <img src="https://via.placeholder.com/600x600" alt="Gaming Laptop">
+            <img src="https://via.placeholder.com/300x300" alt="Product side view">
+            <img src="https://via.placeholder.com/300x300" alt="Product back view">
+        </div>
+
+        <div class="product-info">
+            <h1>Gaming Laptop</h1>
+            <p>This gaming laptop offers powerful performance and sleek design, making it perfect for gaming enthusiasts.</p>
+            <p class="price">$1,299</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="customer-reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <h3>John Doe</h3>
+            <p class="rating">★★★★☆</p>
+            <p>Great performance and design. Perfect for gaming and everyday use.</p>
+        </div>
+
+        <div class="review">
+            <h3>Jane Smith</h3>
+            <p class="rating">★★★★★</p>
+            <p>Amazing laptop! Fast, reliable, and great battery life. Highly recommended.</p>
+        </div>
+
+        <div class="review">
+            <h3>Mark Johnson</h3>
+            <p class="rating">★★★☆☆</p>
+            <p>The laptop is good, but I expected a better display for this price range.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Computer Force. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>

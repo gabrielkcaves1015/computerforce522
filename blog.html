@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the latest articles on tech, IT solutions, and industry insights from Computer Force.">
+    <title>Computer Force | Blog</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem;
+            color: #fff;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .search-bar input {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+            margin-right: 0.5rem;
+        }
+
+        .search-bar button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #f90;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Blog Section */
+        .blog-section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .blog-section h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .blog-post {
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .blog-post a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #f90;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer .social-media a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-list {
+                grid-template-columns: 1fr;
+            }
+
+            footer .social-media a {
+                display: block;
+                margin-bottom: 0.8rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Computer Force</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search blog...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <h1>Latest Blog Posts</h1>
+        <div class="blog-list">
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/400x300" alt="The Future of Cloud Computing">
+                <h3>The Future of Cloud Computing</h3>
+                <p>Discover how cloud computing is shaping the future of IT solutions with scalable storage, remote access, and data management...</p>
+                <a href="blog-article.html">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/400x300" alt="5 Tips for Cybersecurity in 2024">
+                <h3>5 Tips for Cybersecurity in 2024</h3>
+                <p>Learn the essential steps to safeguard your personal and professional data from cyber threats in the ever-evolving digital landscape...</p>
+                <a href="blog-article.html">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/400x300" alt="Top Tech Trends to Watch">
+                <h3>Top Tech Trends to Watch</h3>
+                <p>Explore the hottest tech trends for the upcoming year, from AI advancements to blockchain innovations and everything in between...</p>
+                <a href="blog-article.html">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Computer Force. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>

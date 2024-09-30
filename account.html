@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage your personal details, view order history, and update your account settings.">
+    <title>Computer Force | My Account</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem;
+            color: #fff;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .search-bar input {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+            margin-right: 0.5rem;
+        }
+
+        .search-bar button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #f90;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* My Account Page */
+        .account-page {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .account-page h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Personal Details Section */
+        .personal-details,
+        .order-history,
+        .account-settings {
+            margin-bottom: 2.5rem;
+        }
+
+        .personal-details h2,
+        .order-history h2,
+        .account-settings h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .personal-details p,
+        .order-history p,
+        .account-settings p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .personal-details {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .personal-details img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        /* Order History Section */
+        .order-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+
+        .order-table th,
+        .order-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .order-table th {
+            background-color: #f4f4f4;
+        }
+
+        .order-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Account Settings Section */
+        .account-settings input,
+        .account-settings select {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        .account-settings button {
+            padding: 0.8rem 2rem;
+            background-color: #f90;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .account-settings button:hover {
+            background-color: #e08900;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer .social-media a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .personal-details {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer .social-media a {
+                display: block;
+                margin-bottom: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Computer Force</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- My Account Page -->
+    <section class="account-page">
+        <h1>My Account</h1>
+
+        <!-- Personal Details Section -->
+        <section class="personal-details">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            <div>
+                <h2>Personal Details</h2>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+            </div>
+        </section>
+
+        <!-- Order History Section -->
+        <section class="order-history">
+            <h2>Order History</h2>
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#12345</td>
+                        <td>August 10, 2024</td>
+                        <td>Shipped</td>
+                        <td>$299.99</td>
+                    </tr>
+                    <tr>
+                        <td>#67890</td>
+                        <td>September 5, 2024</td>
+                        <td>Processing</td>
+                        <td>$159.99</td>
+                    </tr>
+                    <tr>
+                        <td>#54321</td>
+                        <td>October 12, 2024</td>
+                        <td>Delivered</td>
+                        <td>$89.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Account Settings Section -->
+        <section class="account-settings">
+            <h2>Account Settings</h2>
+            <form id="account-settings-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" value="john.doe@example.com">
+
+                <label for="password">Change Password</label>
+                <input type="password" id="password" name="password">
+
+                <label for="language">Preferred Language</label>
+                <select id="language" name="language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Computer Force. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Submission -->
+    <script>
+        document.getElementById('account-settings-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your account settings have been updated.');
+            this.reset(); // Clear the form after submission
+        });
+    </script>
+
+</body>
+</html>
